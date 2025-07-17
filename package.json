@@ -4,7 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
+    "dev": "parcel index.html --open",
+    "start": "node server/server.js",
     "build": "parcel build index.html --out-dir=build",
     "predeploy": "npm run build",
     "deploy": "vercel --prod"
